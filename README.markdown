@@ -1,3 +1,12 @@
 # bash_history #
 
-This is the bash_history module. It provides...
+This is the bash history module. Its sole purpose to add additional history and time stamps to the bash logs.
+
+
+###Tested on
+* RHEL 5
+* RHEL 6
+
+###Usage  
+
+    include bash_history
