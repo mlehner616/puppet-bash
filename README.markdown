@@ -1,0 +1,3 @@
+# bash_history #
+
+This is the bash_history module. It provides...
