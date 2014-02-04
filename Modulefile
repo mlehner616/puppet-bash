@@ -1,11 +1,11 @@
 name    'davenport-bash_history'
 version '0.1.0'
-source ''
+source 'git@bitbucket.org:davenport_net/puppet-bash-history.git'
 author 'Mike Lehner'
 license ''
-summary ''
-description ''
-project_page ''
+summary 'Manages bash history'
+description 'Manages bash history'
+project_page 'https://bitbucket.org/davenport_net/puppet-bash-history'
 
 ## Add dependencies, if any:
 # dependency 'username/name', '>= 1.2.0'
