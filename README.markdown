@@ -8,4 +8,4 @@ This is the bash history module. Its sole purpose is to add additional history a
 
 ###Usage  
 
-    ```include ::bash_history```
+    include ::bash_history
