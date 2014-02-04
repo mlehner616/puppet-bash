@@ -10,11 +10,11 @@
 #
 # Sample Usage:
 #
-class bash_history {
+class bash-history {
 
   file{'/etc/profile.d/history.sh':
     ensure  => file,
     mode    => '0644',
-    source  => 'puppet:///modules/bash_history/history.sh',    
+    source  => 'puppet:///modules/bash-history/history.sh',
   }
 }
