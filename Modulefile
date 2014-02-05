@@ -1,4 +1,4 @@
-name    'davenport-bash_history'
+name    'davenport-bashhistory'
 version '0.1.0'
 source 'git@bitbucket.org:davenport_net/puppet-bash-history.git'
 author 'Mike Lehner'
