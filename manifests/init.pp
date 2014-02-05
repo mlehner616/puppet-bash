@@ -1,6 +1,6 @@
-# Class: bash_history
+# Class: bashhistory
 #
-# This module manages bash_history
+# This module manages bash history
 #
 # Parameters: none
 #
@@ -10,7 +10,7 @@
 #
 # Sample Usage:
 #
-class bash-history {
+class bashhistory {
 
   case $::osfamily {
     'RedHat': {
