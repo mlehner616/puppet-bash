@@ -19,7 +19,7 @@ class bashhistory {
           file{'/etc/profile.d/history.sh':
             ensure  => file,
             mode    => '0644',
-            source  => 'puppet:///modules/bash-history/history.sh',
+            source  => 'puppet:///modules/bashhistory/history.sh',
           }
         }
         default: {
