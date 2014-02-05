@@ -1,13 +1,13 @@
 {
   "name": "davenport-bashhistory",
   "version": "0.1.0",
-  "summary": "",
+  "summary": "Manages bash history",
   "author": "Mike Lehner",
-  "description": "",
+  "description": "Manages bash history",
   "dependencies": [],
   "types": [],
   "checksums": {},
-  "source": "",
-  "project_page": "",
+  "source": "git@bitbucket.org:davenport_net/puppet-bashhistory.git",
+  "project_page": "https://bitbucket.org/davenport_net/puppet-bashhistory",
   "license": ""
 }
