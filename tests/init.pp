@@ -1,1 +1,1 @@
-include bash_history
+include bashhistory
