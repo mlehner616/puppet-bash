@@ -1,0 +1,7 @@
+# history.sh: Managed by puppet
+#
+HISTSIZE=<%= @history_size %>
+HISTFILESIZE=<%= @history_file_size %>
+<% if @history_time_format != '' %>
+HISTTIMEFORMAT=<%= @history_time_format %>
+<% end -%>

@@ -1,4 +1,0 @@
-#Because 1000 is just not enough
-HISTSIZE=5000
-HISTFILESIZE=5000
-HISTTIMEFORMAT='%F %T '
