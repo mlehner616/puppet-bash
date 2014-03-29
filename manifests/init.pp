@@ -11,6 +11,9 @@
 # Sample Usage:
 #
 class bash (
+  $aliases                  = $bash::params::aliases,
+  $aliases_config           = $bash::params::aliases_config,
+  $aliases_template         = $bash::params::aliases_template,
   $history_config           = $bash::params::history_config,
   $history_config_template  = $bash::params::history_config_template,
   $history_file_size        = $bash::params::history_file_size,
@@ -23,6 +26,9 @@ class bash (
   $profiled_dir             = $bash::params::profiled_dir
 ) inherits bash::params {
   
+#  validate_array($aliases)
+  validate_absolute_path($aliases_config)
+  validate_string($aliases_template)
   validate_absolute_path($history_config)
   validate_string($history_config_template)
   validate_string($history_time_format)
