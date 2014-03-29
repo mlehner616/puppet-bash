@@ -1,12 +1,12 @@
 class bash::params {
   
   $history_config_template  = 'bash/history.sh.erb'
-  $history_file_size        = $history_size
   $package_ensure           = 'present'
   
   case $::osfamily {
     'Redhat': {
       $history_size         = '1000'
+      $history_file_size    = '1000'
 		  $history_time_format  = '%F %T '
       $profile_dir          = '/etc'
       $profile_file         = "${profile_dir}/profile"
