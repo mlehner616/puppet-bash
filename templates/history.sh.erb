@@ -1,7 +1,9 @@
-# history.sh: Managed by puppet
-#
+## history.sh: Managed by puppet
+##
+## This file is manage by puppet, your changes will be overwritten
+##
 HISTSIZE=<%= @history_size %>
 HISTFILESIZE=<%= @history_file_size %>
-<% if @history_time_format != '' %>
-HISTTIMEFORMAT=<%= @history_time_format %>
+<% if @history_time_format != '' -%>
+HISTTIMEFORMAT='<%= @history_time_format -%>'
 <% end -%>
