@@ -19,6 +19,7 @@ class bash (
   $history_file_size        = $bash::params::history_file_size,
   $history_size             = $bash::params::history_size,
   $history_time_format      = $bash::params::history_time_format,
+  $manage_skel              = $bash::params::manage_skel,
   $package_ensure           = $bash::params::package_ensure,
   $package_name             = $bash::params::package_name,
   $profile_dir              = $bash::params::profile_dir,
@@ -32,6 +33,7 @@ class bash (
   validate_absolute_path($history_config)
   validate_string($history_config_template)
   validate_string($history_time_format)
+  validate_bool($manage_skel)
   validate_string($package_ensure)
   validate_array($package_name)
   validate_absolute_path($profile_dir)

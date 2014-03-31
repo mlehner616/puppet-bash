@@ -4,6 +4,7 @@ class bash::params {
   $aliases_template         = 'bash/aliases.sh.erb'
   $history_config_template  = 'bash/history.sh.erb'
   $package_ensure           = 'present'
+  $manage_skel              = false
   
   case $::osfamily {
     'Redhat': {

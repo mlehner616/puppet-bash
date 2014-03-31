@@ -15,4 +15,17 @@ class bash::config inherits bash {
     mode    => '0644',
     content => template($aliases_template)
   }
+  
+  if $manage_skel == true {
+    
+    file {'/etc/skel/.bashrc_custom':
+      ensure  => file,
+      source  => 'puppet:///modules/bash/bashrc_custom',
+    }
+    
+    file {'/etc/skel/.bash_aliases':
+      ensure  => file,
+      content => '# Put all your custom aliases here'
+    }
+  }
 }
