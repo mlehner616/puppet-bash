@@ -43,10 +43,6 @@ class bash (
 #  # Since Puppet 3.2 we can 'contain' subclasses to ensure classes won't float
 #  # off and do weird things. More information is available at:
 #  # https://puppetlabs.com/blog/class-containment-puppet
-#  contain ::bash::install
-#  contain ::bash::config
-  anchor { 'bash::begin': } ->
-  class { '::bash::install': } ->
-  class { '::bash::config':} ->
-  anchor { 'bash::end': }
+  contain bash::install
+  contain bash::config
 }
