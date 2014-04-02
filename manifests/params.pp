@@ -10,7 +10,7 @@ class bash::params {
     'Redhat': {
       $history_size         = '1000'
       $history_file_size    = '1000'
-		  $history_time_format  = '%F %T '
+		  $history_time_format  = undef
       $profile_dir          = '/etc'
       $profile_file         = "${profile_dir}/profile"
       $profiled_dir         = "${profile_dir}/profile.d"
