@@ -9,3 +9,4 @@ project_page 'https://bitbucket.org/davenport_net/puppet-bash'
 
 ## Add dependencies, if any:
 # dependency 'username/name', '>= 1.2.0'
+dependency 'puppetlabs-stdlib', '>= 4.0.0'

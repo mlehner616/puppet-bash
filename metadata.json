@@ -6,16 +6,21 @@
     "files\\bashrc_custom": "50486ba5ff5fbdda2dd2ca7dfa08672d",
     "spec\\spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "templates\\history.sh.erb": "cb410192b6d673aee6482a397c6cb53a",
-    "Modulefile": "3821f2912d04b52479f1e38e55233372",
+    "Modulefile": "79767dc169bc44f369e269cb02d8ad7e",
     "manifests\\config.pp": "76c10fcd942e3dd174c7799a5bd3e804",
     "README.markdown": "22188b1967569841dfb131a477dcc169",
     "spec\\spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
     "tests\\init.pp": "4288783ad2b3d869cfbe6521e8b4f2a7",
-    "manifests\\params.pp": "e62a12d0795643a86de1fd9e4277679d",
+    "manifests\\params.pp": "49c7496c4e8c20d96a76841391c55160",
     "manifests\\install.pp": "73c1196ec654a246b6ba99d0c6d4b024",
     "templates\\aliases.sh.erb": "2dc3a3cbb0010c4d8f3f639125ed4540"
   },
-  "dependencies": [],
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": "\u003e\u003d 4.0.0"
+    }
+  ],
   "description": "Manages bash history",
   "license": "",
   "name": "davenport-bash",
