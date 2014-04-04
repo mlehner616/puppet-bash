@@ -1,5 +1,5 @@
-puppet-bash
-----
+#puppet-bash
+
 
 ##Overview
 
@@ -14,9 +14,10 @@ Compatible with the following platforms (PRs welcome)
 * EL 5  
 * EL 6
 
+#Parameters
+A value of ```<_os default_>``` will use the Module specified  
+defaults based on OS. This is _usually_ the same as OS defaults. 
 
-Parameters
----
 
 aliases
 ---
@@ -27,10 +28,12 @@ Hash of global aliases and their commands
 
 #####Example
 
-    bash::aliases:
-      vi: vim
-      ls: ls -alh
-      pat: puppet agent -t
+```
+bash::aliases:
+  vi: vim
+  ls: ls -alh
+  pat: puppet agent -t
+```
 
 aliases_config
 ----

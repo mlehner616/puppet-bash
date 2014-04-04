@@ -2,13 +2,7 @@
 #
 # This module manages bash
 #
-# Parameters: none
-#
-# Actions:
-#
 # Requires: see Modulefile
-#
-# Sample Usage:
 #
 class bash (
   $aliases                  = $bash::params::aliases,
