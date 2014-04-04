@@ -6,9 +6,9 @@
     "files\\bashrc_custom": "50486ba5ff5fbdda2dd2ca7dfa08672d",
     "spec\\spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "templates\\history.sh.erb": "cb410192b6d673aee6482a397c6cb53a",
-    "Modulefile": "79767dc169bc44f369e269cb02d8ad7e",
+    "Modulefile": "539fa272221bc06b48c94cf454a6f7dd",
     "manifests\\config.pp": "76c10fcd942e3dd174c7799a5bd3e804",
-    "README.markdown": "22188b1967569841dfb131a477dcc169",
+    "README.markdown": "281b2f9596bb79c944fe2411c34bb36b",
     "spec\\spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
     "tests\\init.pp": "4288783ad2b3d869cfbe6521e8b4f2a7",
     "manifests\\params.pp": "49c7496c4e8c20d96a76841391c55160",
@@ -21,12 +21,12 @@
       "version_requirement": "\u003e\u003d 4.0.0"
     }
   ],
-  "description": "Manages bash history",
+  "description": "Manages bash config",
   "license": "",
-  "name": "davenport-bash",
-  "project_page": "https://bitbucket.org/davenport_net/puppet-bash",
-  "source": "git@bitbucket.org:davenport_net/puppet-bash.git",
-  "summary": "Manages bash history",
+  "name": "mlehner616-bash",
+  "project_page": "https://github.com/mlehner616/puppet-bash",
+  "source": "git@github.com/mlehner616/puppet-bash.git",
+  "summary": "Manages bash config",
   "types": [],
   "version": "0.1.0"
 }
