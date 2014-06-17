@@ -1,20 +1,35 @@
 #puppet-bash
 
+####Table of Contents
+
+1. [Overview](#overview)
+2. [Limitations - OS compatibility, module dependencies, etc.](#limitations)
+3. [Usage - Configuration options and functionality](#usage)
 
 ##Overview
 
-Puppet module to manage bash config
+Puppet module to manage various bash configuration settings.  
+Set up as a parameterized class but intended to be used with hiera.  
+_By Default_: This module **_increases_** history size to 1000. EL default is 500. This is the **_only_** change made without explicit definition. 
 
-##Compatibility
+For now, this module manages the following:
 
-####Requires Puppet v3 and facter >= 1.7.0  
+* Global puppet/hiera managed aliases
+* Global bash history, file size, buffer size, & timestamp
+* Puts a puppet-independent custom alias template in the /etc/skel folder for new users
+* Ensures OS standard permissions are enforced on the above managed files
+* Also manages the package based on OS
+
+##Limitations
+
+####Requires Puppet v3 and facter >= 1.7.0 (precautionary, untested on earlier versions)
 
 Compatible with the following platforms (PRs welcome)  
 
 * EL 5  
 * EL 6
 
-#Parameters
+##Usage
 A value of ```<_os default_>``` will use the Module specified  
 defaults based on OS. This is _usually_ the same as OS defaults. 
 
