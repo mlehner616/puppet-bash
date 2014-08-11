@@ -2,6 +2,8 @@
 ##
 ## This file is managed by puppet, your changes will be overwritten
 ##
-<% @aliases.each_pair do |key, command| -%>
+<%- if @aliases.class == Hash -%>
+<%- @aliases.each_pair do |key, command| -%>
 alias <%= key %>='<%= command %>'
+<% end -%>
 <% end -%>
