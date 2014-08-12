@@ -1,5 +1,5 @@
 name    'mlehner616-bash'
-version '0.1.3'
+version '0.1.4'
 source 'git@github.com/mlehner616/puppet-bash.git'
 author 'Mike Lehner'
 license 'Apache License, Version 2.0'
