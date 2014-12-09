@@ -1,8 +1,10 @@
-class bash::install inherits bash {
-  
+# Class: bash::install
+#
+class bash::install {
+
   package { 'bash':
-    ensure  => $package_ensure,
-    name    => $package_name,
+    ensure  => $bash::package_ensure,
+    name    => $bash::package_name,
   }
-  
+
 }

@@ -1,5 +1,7 @@
-class bash::config inherits bash {
-  
+# Class: bash::config
+#
+class bash::config {
+
   File {
     ensure  => file,
     owner   => 0,
@@ -7,20 +9,20 @@ class bash::config inherits bash {
     mode    => '0644',
   }
 
-  file { $history_config:
+  file { $bash::history_config:
     content => template($history_config_template),
   }
-  
-  file { $aliases_config:
-    content => template($aliases_template)
+
+  file { $bash::aliases_config:
+    content => template($bash::aliases_template)
   }
-  
-  if $manage_skel == true {
-    
+
+  if $bash::manage_skel == true {
+
     file {'/etc/skel/.bashrc_custom':
-      source  => 'puppet:///modules/bash/bashrc_custom',
+      source => 'puppet:///modules/bash/bashrc_custom',
     }
-    
+
     file {'/etc/skel/.bash_aliases':
       content => '# Put all your custom aliases here'
     }

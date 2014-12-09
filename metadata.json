@@ -1,0 +1,27 @@
+{
+  "name": "mlehner616-bash",
+  "version": "0.1.4",
+  "author": "Mike Lehner",
+  "license": "Apache License, Version 2.0",
+  "summary": "Manages bash config",
+  "source": "https://github.com/mlehner616/puppet-bash",
+  "project_page": "https://forge.puppetlabs.com/mlehner616/bash",
+  "issues_url": "https://github.com/mlehner616/puppet-bash",
+  "tags": ["bash", "linux"],
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=3.2.0 <5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [ "5.0", "6.0" ]
+    },
+    {
+      "operatingsystem": "Amazon",
+      "operatingsystemrelease": [ "2014.03", "2014.09"]
+    }
+  ]
+}
