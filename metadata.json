@@ -6,7 +6,7 @@
   "summary": "Manages bash config",
   "source": "https://github.com/mlehner616/puppet-bash",
   "project_page": "https://forge.puppetlabs.com/mlehner616/bash",
-  "issues_url": "https://github.com/mlehner616/puppet-bash",
+  "issues_url": "https://github.com/mlehner616/puppet-bash/issues",
   "tags": ["bash", "linux"],
   "dependencies": [
     {
