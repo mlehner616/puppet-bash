@@ -1,6 +1,6 @@
 {
   "name": "mlehner616-bash",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Mike Lehner",
   "license": "Apache-2.0",
   "summary": "Manages bash config",
