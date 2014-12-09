@@ -19,8 +19,10 @@ class bash (
   $profile_dir              = $bash::params::profile_dir,
   $profile_file             = $bash::params::profile_file,
   $profiled_dir             = $bash::params::profiled_dir
-) inherits bash::params {
-  
+) {
+
+  include bash::params
+
 #  validate_array($aliases)
   validate_absolute_path($aliases_config)
   validate_string($aliases_template)
@@ -33,7 +35,7 @@ class bash (
   validate_absolute_path($profile_dir)
   validate_absolute_path($profile_file)
   validate_absolute_path($profiled_dir)
-  
+
 #  # Since Puppet 3.2 we can 'contain' subclasses to ensure classes won't float
 #  # off and do weird things. More information is available at:
 #  # https://puppetlabs.com/blog/class-containment-puppet
