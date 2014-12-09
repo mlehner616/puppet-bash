@@ -2,7 +2,7 @@
   "name": "mlehner616-bash",
   "version": "0.1.5",
   "author": "Mike Lehner",
-  "license": "Apache License, Version 2.0",
+  "license": "Apache-2.0",
   "summary": "Manages bash config",
   "source": "https://github.com/mlehner616/puppet-bash",
   "project_page": "https://forge.puppetlabs.com/mlehner616/bash",

@@ -3,8 +3,8 @@
 class bash::install {
 
   package { 'bash':
-    ensure  => $bash::package_ensure,
-    name    => $bash::package_name,
+    ensure => $bash::package_ensure,
+    name   => $bash::package_name,
   }
 
 }

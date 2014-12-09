@@ -3,14 +3,14 @@
 class bash::config {
 
   File {
-    ensure  => file,
-    owner   => 0,
-    group   => 0,
-    mode    => '0644',
+    ensure => file,
+    owner  => 0,
+    group  => 0,
+    mode   => '0644',
   }
 
   file { $bash::history_config:
-    content => template($history_config_template),
+    content => template($bash::history_config_template),
   }
 
   file { $bash::aliases_config:
